@@ -32,7 +32,7 @@ export const Modal = (props) => {
                 className="modal-inner shadow">
 
                 <div className="close" onClick={closeModal}>X</div>
-                
+
                 {props.children} 
 
             </div>         
@@ -53,7 +53,6 @@ export const Header = (props) => {
 
 
 export const Content = (props) => {
-
     return (
         <div className="modal-content">
              {props.children}
@@ -63,7 +62,6 @@ export const Content = (props) => {
 
 
 export const Footer = (props) => {
-
     return (
         <div className={`modal-footer ${props.spread ? props.spread : ''}`}>
             {props.children}
@@ -73,9 +71,6 @@ export const Footer = (props) => {
 
 
 export const Action = (props) => {
-
-
-
     return (
         <div className="modal-actions">
             {props.children}
